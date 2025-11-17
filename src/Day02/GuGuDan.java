@@ -5,7 +5,6 @@ public class GuGuDan {
 	public static void main(String[] args) {
 		
 		
-
 		for(int dan=2; 10>dan; dan++){
 			
 			System.out.println(dan + " 단 ");
@@ -17,5 +16,4 @@ public class GuGuDan {
 		  }
 		}
 	}
-
 }
