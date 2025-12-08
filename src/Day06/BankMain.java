@@ -16,6 +16,17 @@ public class BankMain {
 		bank.addAccount(a3);
 
 		bank.printAllAccounts();
+		
+		//검색 테스트
+		BankAccount acc = bank.findAccount("1111");
+		
+		if(acc != null) {
+			System.out.println("계좌 찾기 성공!");
+			acc.deposit(5000); //입금
+			acc.withdraw(3000); //출금
+			acc.printInfo();
+		} else {
+			System.out.println("계좌번호가 존재하지 않습니다.");
+		}
 	}
-
 }

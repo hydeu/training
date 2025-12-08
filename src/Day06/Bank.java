@@ -18,4 +18,15 @@ public class Bank {
             acc.printInfo();
         }
     }
+    
+    //계좌번호로 계좌 찾기
+    BankAccount findAccount(String accNumber) {
+    	for (BankAccount acc : accounts) {
+    		if (acc.getAccountNumber().equals(accNumber)) {
+    			return acc;
+    		}
+    	}
+    	return null; //못찾으면 null
+    }
+    
 }

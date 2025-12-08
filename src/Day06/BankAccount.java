@@ -11,6 +11,11 @@ public class BankAccount {
         this.balance = balance;
         this.accountNumber = accountNumber;
     }
+    
+    public String getAccountNumber() {
+    	return accountNumber;
+    }
+    
 
     void deposit(int amount) {
         balance += amount;
